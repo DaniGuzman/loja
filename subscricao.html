@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ELLA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="subscricao.css">
+    <link rel="stylesheet" href="subscricao.js">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <header class="header">
+        <div class="head-top">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="menu">
+                <a href="loja.html">Loja</a>
+                <a href="Sobre.html">Sobre Nós</a>
+                <a href="contacto.html">Contactos</a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+            <div>
+                <a href="index.html" class="brand-name"><img src="assets/logoloja1.png" alt=""></a>
+            </div>
+            <div>
+                <span class="head-icon">
+                    <a href="Favoritos.html"><i class="far fa-heart"></i></a>
+                  </span>
+                  <span class="head-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                  </span>
+                  <span class="head-icon">
+                    <a href="subscricao.html"><i class="far fa-user"></i></a>
+                  </span>
+                  <span class="head-icon">
+                    <a href="Carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                  </span>
+            </div>
+        </div>
+
+        <div class="account-page">
+            <div class="conatiner">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="subscreva()">Subscreva</span>
+                            <span onclick="registre()">Registre</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="SubscrevaForm">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <input type="text" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <p><a href="">Esqueceu-se da password?</a></p>
+                            <button type="submit" class="btn">Subscreva</button>
+                            <p>Não tem conta?<a href=""> Registre-se</a></p> 
+                        </form>
+
+                        <form id="RegForm">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Registre</button>
+                            <p>O uso deste site constitui aceitação do Acordo do Usuário e Política de privacidade</p> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- js fr toggle form --> 
+
+        <script>
+        var SubscrevaForm = document.getElementById("SubscrevaForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function registre(){
+                RegForm.style.transform = "translateX(0px)"
+                SubscrevaForm.style.transform = "translateX(0px)"
+                Indicator.style.transform = "translateX(100px)"
+            }
+
+            function subscreva(){
+                RegForm.style.transform = "translateX(300px)"
+                SubscrevaForm.style.transform = "translateX(300px)"
+                Indicator.style.transform = "translateX(0px)"
+            }
+        </script>
+
+        
+</body>
+</html>

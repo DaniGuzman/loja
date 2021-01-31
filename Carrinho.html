@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ELLA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Carrinho.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="head-top">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="menu">
+                <a href="loja.html">Loja</a>
+                <a href="Sobre.html">Sobre Nós</a>
+                <a href="contacto.html">Contactos</a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+            <div>
+                <a href="index.html" class="brand-name"><img src="assets/logoloja1.png" alt=""></a>
+            </div>
+            <div>
+                <span class="head-icon">
+                    <a href="Favoritos.html"><i class="far fa-heart"></i></a>
+                </span>
+                <span class="head-icon">
+                    <a href=""><i class="fas fa-search"></i></a>
+                </span>
+                <span class="head-icon">
+                    <a href="subscricao.html"><i class="far fa-user"></i></a>
+                </span>
+                <span class="head-icon">
+                    <a href="Carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                </span>
+            </div>
+        </div>
+
+            <div class="carrinho-page">
+               
+                    <div class="row">
+                        <div class="col-2">
+                            <div>
+                                <table>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Tamanho</th>
+                                        <th>Quantidade</th>
+                                        <th>Preço total</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="cart-info">
+                                                <img src="assets/cart1.png" alt="">
+                                                <p>Sweater cropped <br>com gola alta</p>
+                                        <td>
+                                            <select>
+                                                <option>XS</option>
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" value="1"></td>
+                                        <td>15,95€ <i class="fas fa-times"></i></td>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="cart-info">
+                                                <img src="assets/cart2.png" alt="">
+                                                <p>Saia mini <br>com lantejoulas</p>
+                                        <td>
+                                            <select>
+                                                <option>XS</option>
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" value="1"></td>
+                                        <td>19,95€<i class="fas fa-times"></i></td>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <div class="cart-info">
+                                                <img src="assets/cart3.png" alt="">
+                                                <p>Jeans de perna<br> longa</p>
+                                        <td>
+                                            <select>
+                                                <option>XS</option>
+                                                <option>S</option>
+                                                <option>M</option>
+                                                <option>L</option>
+                                                <option>XL</option>
+                                            </select>
+                                        </td>
+                                        <td><input type="number" value="1"></td>
+                                        <td>15.96€<i class="fas fa-times"></i></td>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="total-price">
+                                        <td>Subtotal</td>
+                                        <td>65.85€</td>
+                                    </tr>
+                                    <tr class="total-price1">
+                                        <td>Remessa</td>
+                                        <td>Grátis</td>
+                                    </tr>
+                                    <tr class="total-price2">
+                                        <td>Subtotal</td>
+                                        <td>65.85€</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                      
+                                <div class="form-container">
+                                    <h1>Inf. pagamento</h1>
+                                    <form>
+                                        <label class="container"><img src="assets/cart.png" alt="Credit Card">Credit Card
+                                            <input class="test" type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          <label class="container"><img src="assets/paypal.png" alt="PayPal">Paypal
+                                            <input class="test" type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          <label class="container"><div class="image1"><img src="assets/visa.png" alt="Visa">Visa</div>
+                                            <input class="test" type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          
+                                          <label for="fname">Nome do cartão:</label>
+                                          <input type="text" id="fname" name="fname"><br><br>
+                                          <label for="lname">Número do cartão:</label>
+                                          <input type="text" id="lname" name="lname"><br><br>
+                                          <label for="data">Data de Validade:</label>
+                                          <input type="text" 
+                                                 id="inputExpDate" 
+                                                 placeholder="MM / YY" 
+                                                 maxlength='7'>
+                                          <label for="pass">CVV:</label>
+                                          <input type="text" class="cvv" placeholder="CVV" maxlength="3">
+                                          <div class="finaliza">		
+                                              <input id="inputExppag" type="submit" value="Finalizar pagamento">
+                                          </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              
+                
+</body>
+
+</html>
